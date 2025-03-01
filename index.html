@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=], initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //   // Passo 1: Captura de Dados
+      //   const usuario = {
+      //     nome: "João",
+      //     idade: 20,
+      //     hobbies: ["Futebol", "Leitura", "Música", "Handbaal"],
+      //   };
+
+      //   // Passo 2: Estrutura Condicional
+      //   if (usuario.idade < 18) {
+      //     console.log("Menor de idade");
+      //   } else {
+      //     console.log("Maior de idade");
+      //   }
+
+      //   // Passo 3: Laço de Repetição
+      //   console.log("Hobbies:");
+      //   usuario.hobbies.forEach((hobby) => {
+      //     console.log(`- ${hobby}`);
+      //   });
+
+      //   // Passo 4: Função Personalizada
+      //   function exibirMensagem(nome, idade) {
+      //     return `Olá, ${nome}! Você tem ${idade} anos.`;
+      //   }
+
+      //   console.log(exibirMensagem(usuario.nome, usuario.idade));
+
+      // Array vazio de hobbies
+      let hobbies = [];
+
+      // Loop para continuar pedindo hobbies até o usuário decidir parar
+      while (true) {
+        // Solicitar ao usuário para inserir um hobby
+        let novoHobby = prompt(
+          "Digite um hobby para adicionar ao seu array de hobbies (ou clique em Cancelar para terminar):"
+        );
+
+        // Se o usuário cancelar ou não digitar nada, sai do loop
+        if (!novoHobby) {
+          break;
+        }
+
+        // Adicionar o novo hobby ao array
+        hobbies.push(novoHobby);
+      }
+
+      // Exibir o array de hobbies
+      console.log("Seus hobbies são: ", hobbies);
+    </script>
+  </body>
+</html>
