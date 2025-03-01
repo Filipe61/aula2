@@ -7,32 +7,32 @@
   </head>
   <body>
     <script type="text/javascript">
-      //   // Passo 1: Captura de Dados
-      //   const usuario = {
-      //     nome: "João",
-      //     idade: 20,
-      //     hobbies: ["Futebol", "Leitura", "Música", "Handbaal"],
-      //   };
+      // Passo 1: Captura de Dados
+      const usuario = {
+        nome: "João",
+        idade: 20,
+        hobbies: ["Futebol", "Leitura", "Música", "Handbaal"],
+      };
 
-      //   // Passo 2: Estrutura Condicional
-      //   if (usuario.idade < 18) {
-      //     console.log("Menor de idade");
-      //   } else {
-      //     console.log("Maior de idade");
-      //   }
+      // Passo 2: Estrutura Condicional
+      if (usuario.idade < 18) {
+        console.log("Menor de idade");
+      } else {
+        console.log("Maior de idade");
+      }
 
-      //   // Passo 3: Laço de Repetição
-      //   console.log("Hobbies:");
-      //   usuario.hobbies.forEach((hobby) => {
-      //     console.log(`- ${hobby}`);
-      //   });
+      // Passo 3: Laço de Repetição
+      console.log("Hobbies:");
+      usuario.hobbies.forEach((hobby) => {
+        console.log(`- ${hobby}`);
+      });
 
-      //   // Passo 4: Função Personalizada
-      //   function exibirMensagem(nome, idade) {
-      //     return `Olá, ${nome}! Você tem ${idade} anos.`;
-      //   }
+      // Passo 4: Função Personalizada
+      function exibirMensagem(nome, idade) {
+        return `Olá, ${nome}! Você tem ${idade} anos.`;
+      }
 
-      //   console.log(exibirMensagem(usuario.nome, usuario.idade));
+      console.log(exibirMensagem(usuario.nome, usuario.idade));
 
       // Array vazio de hobbies
       let hobbies = [];
